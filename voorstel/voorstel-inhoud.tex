@@ -15,37 +15,45 @@
 \section{Inleiding}%
 \label{sec:inleiding}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+% Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
 
-\begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
-\end{itemize}
+% \begin{itemize}
+%   \item kaderen thema
+%   \item de doelgroep
+%   \item de probleemstelling en (centrale) onderzoeksvraag
+%   \item de onderzoeksdoelstelling
+% \end{itemize}
 
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+% Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
 
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+% De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
 
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
+% Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
 
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+% Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
 
+Het samenstellen van geschikte testbatterijen is voor sportprofessionals zoals basketbalcoaches, vaak een moeilijke en tijds intensieve taak. Ondanks het ruime aanbod aan testen, richtlijnen en beschikbare data blijft het bepalen van een passende testplan voor een specifieke speler, een team of een bepaald letselcomplex een uitdaging. Dit leidt in de praktijk tot variatie in kwaliteit, onnodige tijdsbelasting en een gebrek aan standaardisatie binnen de evaluatie en opvolgprocessen.
+
+Deze bachelorproef richt zich daarom op het ontwikkelen van een AI gedreven systeem die dit selectieproces kan automatiseren. De focus ligt initieel op basketbal met mogelijk tot uitbrijding laater, waarbij coaches de target doelgroep vormen. Door parameters zoals discipline, letseltype en beschikbare testtijd te combineren, moet een systeem relevante en wetenschappelijk acuraate testplannen kunnen genereren die direct gebruikt kunnen worden.
+
+De centrale onderzoeksvraag is:
+Hoe kan een AI Test Set Generator automatisch bruikbare en wetenschappelijk onderbouwde testplannen genereren voor basketbalcoaches op basis van vooraf gedefinieerde parameters, zoals informatie over de speler het team?
+
+Het doel van dit onderzoek is het realiseren van een proof-of-concept dat een LLM en een RAG-architectuur combineert om testbatterijen te genereren die consistent, interpreteerbaar en aanpasbaar zijn. Een succesvol prototype moet aantonen dat AI het opstellen van testplannen efficiënter kan maken en een betrouwbare basis kan vormen voor verdere uitbreiding en integratie binnen bredere sportcontexten.
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Literatuurstudie}%
 \label{sec:literatuurstudie}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+% Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+% Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+% Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+% Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
 
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+% Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -54,31 +62,75 @@ Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle no
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+% Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+
+\subsection{AI in sport performance analyse}
+De toepassing van AI in sport analyse groeit de laatste jaren sterk. AI word ingezet om grote en complexe datasets te interpreteren en relevante performance indicatoren eruit te haalen, iets wat handmatig vaak te lang duurt of te subjectief is \autocite{Kok2024, Araujo2021}. Zowel in individuele sporten als teamsporten kan AI patronen ontdekken in aller soorten data. Deze objectieve inzichten vullen traditionele methoden aan en vormen een basis voor het automatiseren van testselecties op basis van sportprestatievariabelen \autocite{Gershon2023, Martens2024}.
+
+\subsection{Automatisering en machine learning in sporttests}
+Machine learning wordt steeds vaker gebruikt om prestatie parameters te voorspellen of te schatten. Zo kunnen sprintprestaties, sprongcapaciteit, reactietijd enz. van sporters nauwkeurig worden ingeschat op basis van historische data en sensormetingen \autocite{Nguyen2023, Li2024}. Dergelijke AI-modellen tonen aan dat prestatie-indicatoren automatisch kunnen worden afgeleid zonder dat elke meting handmatig uitgevoerd moet worden. Dit onderbouwt het potentieel van AI om relevante testbatterijen samen te stellen uit complexe datasets.
+
+\subsection{AI, prestatieoptimalisatie en blessurepreventie}
+Recente reviews wijzen uit dat AI een belangrijke rol kan spelen bij prestatieverbetering, blessurepreventie en revalidatieondersteuning \autocite{Fernandez2024, Huang2024}. Hoewel deze studies zich niet specifiek richten op testselectie, laten ze zien dat AI-gebaseerde beslissingsondersteuning waardevol is voor sportwetenschappelijke processen. Dit benadrukt de relevantie van een AI-gebaseerde Test Set Generator: het kan professionals helpen beslissingen te nemen over welke tests het meest geschikt zijn voor een specifieke situatie.
+
+\subsection{NLP en LLM’s in sportcontexten}
+De ontwikkeling van benchmarks voor taalmodellen in sportcontexten toont dat LLM’s steeds beter worden in sportspecifieke redenering, maar dat diepgaand domeinbegrip nog steeds uitdagingen kent \autocite{Brown2024, Lee2024}. Voor een Test Set Generator betekent dit dat contextspecifieke fine-tuning en retrievalmethoden nodig zijn om relevante en accurate testvoorstellen te genereren, zodat de output bruikbaar en betrouwbaar is voor coaches en therapeuten.
+
+\subsection{Automatische itemgeneratie en testcreatie}
+Concepten uit de psychometrie, zoals automatische itemgeneratie (AIG), illustreren hoe algoritmen testonderdelen automatisch kunnen creëren uit templates en regels \autocite{Gierl2017, Wang2025}. Hoewel AIG traditioneel wordt gebruikt in psychologische testen, laat het zien dat algoritmische generatiesystemen zinvol kunnen zijn voor het samenstellen van testplannen. Dit sluit aan bij het doel van de Test Set Generator: AI combineren met specifieke kennis uit het veld om valide en bruikbare testbatterijen samen te stellen.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+% Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+% Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+% Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
 
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+% Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
 
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+% Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
 
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+% Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+\subsection{Fase 1: Literatuurstudie}
+Het onderzoek start met een literatuurstudie waarin wordt onderzocht welke AI-toepassingen bestaan in sport performance analyse en automatische testgeneratie. Het doel is om een beeld te krijgen van de huidige oplossingen en de nog openstaande vragen binnen dit domein. Notities en referenties worden bijgehouden, zodat alle informatie overzichtelijk blijft. Deze fase loopt van de start tot 1 februari 2026 en levert een literatuuroverzicht op waarin de belangrijkste informatie en wetenschappelijke bronnen worden samengevat.
+
+\subsection{Fase 2: Vereistenanalyse}
+Na de literatuurstudie wordt een vereistenanalyse uitgevoerd op basis van bestaande documentatie, interne richtlijnen en beschikbare datasets binnen de mijn stageplaats (hylyght). Hierbij worden de verschillende vereisten voor de Test Set Generator gedefinieerde, zoals relevante parameters, type letsel enz. Het doel is een zicht te krijgen dat als basis dient voor het ontwerpen en implementeeren van het systeem. De resultaten worden overzichtelijk gedocumenteerd. Deze fase loopt van na de examenperiode februari tot 23 februari 2025 en levert een document op dat de verdere ontwikkeling van de Test Set Generator ondersteunt en verduidelijkt.
+
+\subsection{Fase 3: Ontwerp en Architectuur}
+In deze fase wordt de structuur van de Test Set Generator uitgewerkt. De workflow van de LLM en de opslag van gegevens worden gepland zodat het prototype effectief kan functioneren. Het doel is een goed ontwerp te hebben dat de implementatie van het proof-of-concept makelijker maakt. Python wordt gebruikt als de hooft programeertaal om een foundation te leggen. De fase loopt van 24 februari tot 14 maart 2025 en levert een voorlopige architectuur op.
+
+\subsection{Fase 4: Implementatie Proof-of-Concept}
+Vervolgens wordt het prototype ontwikkeld. Dit omvat het fine-tunen van een LLM, het koppelen van de database en het genereren van testplannen. Het doel is dat de output van het systeem makelijk interpreteerbare en aanpasbare is en dat een voledige testbatterijen geproduceerd word. Python wordt gebruikt voor het codeer werk en sql server voor de database. Deze fase loopt van 1 maart tot 25 april 2025 en resulteert in een werkend prototype met basisdocumentatie.
+
+\subsection{Fase 5: Evaluatie en Validatie}
+Het prototype wordt getest en de resultaten worden vergeleken met bestaande handmatige testbatterijen. Feedback wordt geanalyseerd om inzicht te krijgen in de bruikbaarheid, accuraatheid en interpretatiegemak. Python wordt gebruikt voor de analyses van het systeem en LaTeX voor het opstellen van het evaluatierapport. Deze fase loopt van 28 april tot 16 mei 2025 en levert een rapport met conclusies en prestatie van het systeem.
+
+\subsection{Fase 6: Documentatie en Afronding}
+Tot slot worden alle fasen samengevoegd in een volledig verslag. Het doel is een technisch correct en compleet bachelorproefverslag op te leveren voor de deadline. De fase loopt van 19 mei tot 29 mei 2025 en resulteert in de finale bachelorproef.
+
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+% Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+% Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+% Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
+Het verwachte resultaat van dit onderzoek is een werkend proof-of-concept van een AI-gebaseerde Test Set Generator die automatisch relevante en wetenschappelijk onderbouwde testbatterijen kan samenstellen voor basketbalcoaches. Het systeem moet in staat zijn om op basis van vooraf gedefinieerde parameters (zoals letseltype, beschikbare tijd, team- of spelersinformatie) een plan te genereren dat aansluit bij de praktijk en de huidige wetenschappelijke inzichten.
+
+De belangrijkste deliverables zijn:
+\begin{itemize}
+	\item Een literatuuroverzicht van bestaande AI-toepassingen in sportanalyse en automatische testgeneratie.
+	\item Een requirementsdocument met de functionele en niet-functionele vereisten voor het systeem.
+	\item Een prototype van de Test Set Generator.
+	\item Een evaluatierapport waarin de gegenereerde testbatterijen worden vergeleken met handmatig samengestelde plannen.
+\end{itemize}
+
+De verwachting is dat het systeem in staat zal zijn om sneller relevante testbatterijen te genereren die vergelijkbaar of zelfs beter zijn dan handmatige selecties, zowel qua inhoud als onderbouwing. Eventuele afwijkingen of onverwachte resultaten zullen worden geanalyseerd om te begrijpen waar het systeem tekortschiet of juist toegevoegde waarde biedt. Dit kan leiden tot aanbevelingen voor verdere verbetering of uitbreiding van het prototype, bijvoorbeeld naar andere sportdisciplines of bredere toepassingen binnen de sportwetenschappen.
